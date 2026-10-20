@@ -221,6 +221,19 @@
 .auth-card h2{margin:0 0 8px;font-size:26px}.auth-card p{color:#aaa8bd;line-height:1.8;margin:0 0 20px}.auth-card label{display:block;font-size:13px;margin:14px 0 7px;color:#d4d0e6}.auth-card input{width:100%;box-sizing:border-box;padding:13px 14px;border-radius:12px;border:1px solid #454156;background:#151521;color:#fff;font:inherit;outline:none}.auth-card input:focus{border-color:#a98bff;box-shadow:0 0 0 3px #a98bff22}.auth-actions{display:flex;gap:10px;margin-top:18px}.auth-actions button,.auth-switch{font:inherit;cursor:pointer;border-radius:12px;padding:12px 15px}.auth-primary{border:0;color:#171421;background:linear-gradient(110deg,#b39aff,#54d9d5);font-weight:700;flex:1}.auth-secondary{border:1px solid #454156;background:#242334;color:#eee}.auth-switch{border:0;background:transparent;color:#69dfd6;width:100%;margin-top:10px}.auth-note{font-size:12px!important;margin-top:12px!important}.auth-error{color:#ff9eaa!important;min-height:20px;font-size:13px!important;margin:10px 0 0!important}.hidden{display:none!important}
 @media(prefers-color-scheme:light){.auth-card{background:rgba(248,248,255,.97);color:#1b1b2a}.auth-card p{color:#66677a}.auth-card label{color:#44445a}.auth-card input{background:#fff;color:#171421;border-color:#d5d3e3}.auth-secondary{background:#f0eff8;color:#29263c;border-color:#d5d3e3}}
 
+
+/* اصلاح چیدمان موارد ذخیره‌شده؛ جلوگیری از بیرون‌زدن متن و دکمه‌ها از کادر */
+.history-list, #historyList { min-width:0; max-width:100%; box-sizing:border-box; }
+.history-item { min-width:0; max-width:100%; box-sizing:border-box; flex-wrap:wrap; }
+.history-content { min-width:0; flex:1 1 120px; overflow:hidden; }
+.history-content strong, .history-content small { max-width:100%; overflow-wrap:anywhere; }
+.history-item .mini-btn { flex:0 0 auto; white-space:nowrap; }
+@media (max-width:420px) {
+  .history-item { gap:7px; padding:8px; }
+  .history-content { flex-basis:calc(100% - 50px); }
+  .history-item .mini-btn { margin-top:2px; }
+}
+
 </style>
 </head>
 <body>
