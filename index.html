@@ -234,6 +234,36 @@
   .history-item .mini-btn { margin-top:2px; }
 }
 
+
+/* Theme and text-selection fixes */
+::selection { background: #b6f36a !important; color: #101510 !important; }
+input::selection, textarea::selection, [contenteditable="true"]::selection { background:#b6f36a !important; color:#101510 !important; }
+html[data-theme="light"] ::selection,
+html[data-theme="light"] input::selection,
+html[data-theme="light"] textarea::selection { background:#c9b8ff !important; color:#21183a !important; }
+html[data-theme="light"] .panel {
+  background: linear-gradient(145deg, #ffffff 0%, #f5f7fc 100%) !important;
+  border-color: #cbd4e4 !important;
+  box-shadow: 0 14px 38px rgba(42,58,90,.10) !important;
+}
+html[data-theme="light"] .history-item {
+  background: #ffffff !important;
+  border-color: #d9e0ec !important;
+}
+html[data-theme="light"] .history-content strong { color:#20283a !important; }
+html[data-theme="light"] .history-content small { color:#68758b !important; }
+html[data-theme="light"] .tab.active {
+  background:#e2e9f5 !important;
+  color:#20283a !important;
+  border-color:#cbd4e4 !important;
+}
+html[data-theme="light"] textarea,
+html[data-theme="light"] input,
+html[data-theme="light"] .drop {
+  color:#20283a !important;
+  caret-color:#20283a;
+}
+
 </style>
 </head>
 <body>
